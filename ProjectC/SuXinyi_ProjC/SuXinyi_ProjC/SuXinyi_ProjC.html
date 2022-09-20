@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Project C </title>
+  </head>
+  <style>
+     h1 {
+    font-family: Charter ;
+    margin-bottom: 15px;
+    color:rgb(111, 71, 255);
+    text-align: center;
+    }
+    
+    p,div,label, select{
+    font-family: Charter ;
+    color: rgb(186, 100, 163);
+    }
+  </style>
+
+  <body onload="main()">
+    <canvas id="webgl" >
+    Please use a browser that supports "canvas"
+    </canvas>
+    <p>
+    <body bgcolor="MistyRose "></body>
+    <h1>Project C Begins</h1>
+    <h2> Function 1 </h2>
+    <label for="lightON">Light Control:</label>
+    <select id="lightOn">
+      <option value="lightOn" selected = "selected">On</option>
+      <option value="lightOff">Off</option>
+    </select>
+    <label for="shading">Choose a shading:</label>
+    <select  id="shading">
+      <option value="gouraud" selected = "selected">Gouraud</option>
+      <option value="phong">Phong</option>
+    </select>
+    <label for="lighting">Choose a lighting:</label>
+    <select  id="lighting">
+      <option value="Phong" selected = "selected">Phong Lighting</option>
+      <option value="BlinnPhong">Blinn Phong Lighting</option>
+    </select>
+
+    <div>
+      Ambient : R<input type="range" min="0" max="255" value="255"  id="arColor1">
+       G<input type="range" min="0" max="255" value="255"  id="agColor1">
+       B<input type="range" min="0" max="255" value="255" id="abColor1">
+    </div>
+    <div >
+      Diffuse : R<input type="range" min="0" max="255" value="255"  id="drColor1">
+       G<input type="range" min="0" max="255" value="255"  id="dgColor1">
+       B<input type="range" min="0" max="255" value="255" id="dbColor1">
+    </div>
+    <div>
+      Specular : R<input type="range" min="0" max="255" value="255"  id="srColor1">
+       G<input type="range" min="0" max="255" value="255" id="sgColor1">
+       B<input type="range" min="0" max="255" value="255"  id="sbColor1">
+    </div>
+    <div >
+      Light Position : X<input type="range" min="-100" max="100" value="-20"  id="PosX">
+       Y<input type="range" min="-100" max="100" value="100" id="PosY">
+       Z<input type="range" min="-100" max="100" value="100"  id="PosZ">
+    </div>
+    <h2>Function 2</h2>
+    <p>Users can use WASD navigation to look around and zoom in or zoom out the scene </p>
+     <h2>Function 3</h2>
+     <p>Users can use the arrow keys to change the viewing angle of the camera</p>
+   </p>
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-quat03.js"></script>
+		<script src="VBObox-Lib.js"></script>
+    <script src="../lib/materials_Ayerdi.js"></script>
+    <script src="SuXinyi_ProjC.js"></script>
+  </body>
+</html>
