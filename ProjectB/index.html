@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+		<title>Project B</title>
+  </head>
+  <style>
+  h1 {
+	font-family: Charter ;
+	margin-bottom: 15px;
+	color:rgb(111, 71, 255);
+	text-align: center;
+  }
+  
+  p {
+	font-family: Charter ;
+	color: rgb(186, 100, 163);
+  }
+</style>
+
+	<body onload="main()" onresize="drawResize()">
+    <canvas id="webgl" width="600" height="600">
+    Please use a browser that supports "canvas"
+    </canvas>
+	<p>
+	<body bgcolor="MistyRose "></body>
+    <h1>Project B Begins</h1>
+
+
+	<!-- Fill this HTML tag with JavaScript-generated text that names the shape displayed
+	To change shapes, users press the 'Next' button, which calls the 'nextShape()' function-->
+
+		<!--BUTTONS: commands below create HTML push-buttons with labels
+			Spin <<, runStop, and Spin >>.  
+		When users click the button, HTML calls JavaScript functions
+			"spinDown()", "runStop()" and "spinUp()"   -->
+ 	 <h2>Function 1</h2>
+	 <p>Users can use WASD navigation to look around and zoom in or zoom out the scene
+	 <h2>Function 2</h2>
+	 <p>Users can use the arrow keys to change the viewing angle of the camera</p>
+	 <h2>Function 3</h2>
+	 <p>Users can drag the snowman by mouse</p>
+	  <h2>Function 4</h2>
+	  <p>Users can control the spin speed and direction </p>
+      <button type="button" onclick="spinDown()">Spin << </button>
+	  <button type="button" onclick="runStop()">Run/Stop</button>
+	  <button type="button" onclick="spinUp()">Spin >> </button>
+		</p>
+	
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-quat03.js"></script>
+	<!--	Finally, load in our own JavaScript program file.
+	-->
+    <script src="projectB.js"></script>
+  </body>
+</html>
