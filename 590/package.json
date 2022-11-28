@@ -1,0 +1,34 @@
+{
+  "author": "David Trejo <david.daniel.trejo@gmail.com> (http://dtrejo.com)",
+  "name": "colorslice",
+  "description": "multiple color picker for your browser using screenshots",
+  "version": "0.1.0-32",
+  "repository": {
+    "url": ""
+  },
+  "main": "colorslice.js",
+  "dependencies": {
+    "browserify-mime": "1.2.9",
+    "browserify-watcher": "~1.1.0",
+    "color-parser": "0.1.0",
+    "commander": "1.0.4",
+    "css": "1.1.0",
+    "debug": "0.7.4",
+    "deep-equal": "0.0.0",
+    "ecstatic": "~0.3.2",
+    "error-page": "0.0.6",
+    "extract-values": "~0.1.2",
+    "husl": "6.0.0",
+    "stylus": "~0.32.0"
+  },
+  "devDependencies": {
+    "buildbranch": "1.0.0"
+  },
+  "optionalDependencies": {},
+  "homepage": "http://dtrejo.com/colorslice/",
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo 'run the server, visit homepage to recompile css, quit server, commit changes, npm run deploy'",
+    "deploy": "buildbranch gh-pages public"
+  }
+}
